@@ -1,0 +1,45 @@
+---
+title: "Codigos"
+format: html
+editor: visual
+---
+
+## Biblioteca codigos
+
+Resumen de códigos útiles para realizar análisis estadísticos en Rstudio.
+
+## 1. Preparación
+
+Usualmente usamos 2 códigos antes de comenzar a trabajar:
+
+`{options(scipen = 999) #Desactivamos la notación científica} rm(list=(ls())) #Limpiar la memoria de trabajo`
+
+Luego, si no estabamos trabajando con un R project, debemos seleccionar el directorio de trabajo, en mi caso, el actual sería el siguiente:
+
+Nota: tener ojo con el "/" a veces está en la otra dirección y hay que cambiarlo.
+
+```{r}
+setwd("E:/Github/Codigos")
+```
+
+Luego, hay que cargar los paquetes instalar los paquetes necesarios, aquí va un ejemplo de los más usados:
+
+```{r}
+install.packages("pacman")
+install.packages("rio")
+install.packages("tidyverse")
+install.packages("psych")
+install.packages("sjmisc")
+install.packages("table1")
+install.packages("GPArotation")
+install.packages("sjPlot")
+install.packages("readr")
+install.packages("haven")
+install.packages("mvnormtest")
+```
+
+Una vez instalados, para "llamarlos" utilizamos el siguiente código con cada uno de los paquetes.
+
+```{r}
+library(pacman)
+```
